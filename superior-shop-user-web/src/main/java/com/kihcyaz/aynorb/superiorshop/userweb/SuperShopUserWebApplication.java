@@ -1,4 +1,4 @@
-package com.kihcyaz.aynorb.superiorshopuserweb;
+package com.kihcyaz.aynorb.superiorshop.userweb;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -7,7 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@MapperScan("com.kihcyaz.aynorb.superiorshopuserweb.dao")
+@MapperScan("com.kihcyaz.aynorb.superiorshop.userweb.dao")
 public class SuperShopUserWebApplication {
 
     public static void main(String[] args) {

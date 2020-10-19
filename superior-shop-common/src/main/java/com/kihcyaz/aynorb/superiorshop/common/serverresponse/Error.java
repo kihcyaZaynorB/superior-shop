@@ -1,4 +1,4 @@
-package com.kihcyaz.aynorb.superiorshopcommon.serverresponse;
+package com.kihcyaz.aynorb.superiorshop.common.serverresponse;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

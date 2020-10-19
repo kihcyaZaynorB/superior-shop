@@ -9,6 +9,8 @@
         <module>superior-shop-user-service</module>
         <module>superior-shop-common</module>
         <module>superior-shop-user-web</module>
+        <module>superior-shop-manager-service</module>
+        <module>superior-shop-manager-service</module>
     </modules>
     <groupId>com.kihcyaz.aynorb.superior</groupId>
     <artifactId>superior-shop</artifactId>
@@ -27,6 +29,7 @@
         <mybatis-generator.version>3.4.0</mybatis-generator.version>
         <velocity-engine.version>2.2</velocity-engine.version>
         <druid-starter.version>1.1.17</druid-starter.version>
+        <redis-starter.version>2.3.2.RELEASE</redis-starter.version>
         <lombok.version>1.18.12</lombok.version>
     </properties>
 
@@ -71,6 +74,11 @@
                 <type>pom</type>
             </dependency>
             <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${redis-starter.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
@@ -78,13 +86,8 @@
             </dependency>
             <dependency>
                 <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>2.9.2</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>2.9.2</version>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>3.0.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
